@@ -11,6 +11,7 @@
 
 body {
     background-color: fuchsia;
+    
 }
 
 h1{ 
@@ -20,15 +21,13 @@ h1{
 }
 
 h2 {
-    padding-top: 35px;
-    padding-left: 400px;
     font-size: 35px;
     font-weight: bolder;
 }
 
 h3{
    font-size: 30px;
-   padding: 40px;
+   padding: 15px;
 
 }
 
@@ -38,10 +37,6 @@ h4 {
 }
 
 p { 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     font-size: 20px;
     margin-top: 320px;
 }
@@ -50,15 +45,26 @@ p {
 /* NAV */
 nav {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    row-gap: 28px;
     align-items: center;
     padding: 24px 0;
 
 }
 
+nav > a:hover {
+  color: #1307ed;  
+}
+
+nav > :first-child {
+    width: 100px;
+}
+
 nav> ul {
-    list-style: none;
     display: flex;
+    justify-content: center;
+    list-style: none;
     gap: 24px;
 }
 
@@ -71,14 +77,23 @@ nav > ul > li > a {
 nav > ul > li > a:hover {
  color: #1307ed;
 }
+
+nav > a {
+    top: 70px;
+    left: 0;
+    color: rgb(179, 248, 110);
+    
+}
+
+
+
 /* HEADER */
 
 header {
     display: flex;
     padding: 35px 0;
     flex-direction: column;
-    row-gap: 60px;
-    column-gap: 100px;
+    column-gap: 90px;
     justify-content: flex-start;
     align-items: center;
     align-content: center;
@@ -88,50 +103,64 @@ header {
 
 header > div > :first-child {
     display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 2000px;
     justify-content: center;
     align-items: center;
-    height: 10vh;
-    flex-direction: column;
-    gap: 28px;
+    height: 5vh;
+    gap: 20px;
  }
 
 
 header > div >:nth-child(2)> img {
-    display: block;
+    display: flex;
+    position: relative;
     justify-self: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20%;
+     width: 20%;
     border-radius: 50%;
 }
-
-
-header> div > :last-child  {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-content: center;
-   
+ 
+header > div > :last-child {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: 390px;
+    top: 20px;
 }
 
-
+header > div > :last-child > p {
+    margin-top: 10px;
+    max-width: 700px;
+    word-wrap: break-word;
+}
 
 /* SECCIÓN TRABAJOS */
+
 #trabajos { 
    display: flex;
    flex-direction: column;
-   position: absolute;
-   top: 0;
+   position: relative;
+   max-width: 300px;
+   top: -680px;
    left: 0;
-   margin: 15px;
-   padding-left: 30px;
+   margin: 23px;
+   padding-left: 40px;
+   color: khaki
 }
 
-#trabajos > .list > ul {
-    display: flex;
-    flex-direction: column;
-    
+
+#trabajos2 { 
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   max-width: 300px;
+   top: -1380px;
+   left: 0;
+   padding-left: 1170px;
+   color: khaki
 }
+
 
 /* SECCIÓN GALERÍA */
 
@@ -152,8 +181,6 @@ header> div > :last-child  {
 }
 
 
-
-
 /* SECCIÓN CONTACTO */
 
 #contacto {
@@ -166,13 +193,33 @@ header> div > :last-child  {
     color: khaki;
 }
 
-#contacto > h2 {
+#contacto > h3 {
     display: flex;
     flex-direction: column;
-    left: 10px;
+    max-width: 1000px;
+    word-wrap: break-word;
+    
 }
 
+#contacto > a {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    top: -20px;
+    color: khaki;
+}
 
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.footer > .paginas {
+    color: rgb(179, 248, 110);
+}
 
 
 

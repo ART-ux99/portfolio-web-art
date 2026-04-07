@@ -117,7 +117,7 @@ header > div >:nth-child(2)> img {
     display: flex;
     position: relative;
     justify-self: center;
-     width: 20%;
+    width: 20%;
     border-radius: 50%;
 }
  
@@ -142,7 +142,7 @@ header > div > :last-child > p {
    flex-direction: column;
    position: relative;
    max-width: 300px;
-   top: -680px;
+   top: -620px;
    left: 0;
    margin: 23px;
    padding-left: 40px;
@@ -155,7 +155,7 @@ header > div > :last-child > p {
    flex-direction: column;
    position: relative;
    max-width: 300px;
-   top: -1380px;
+   top: -1320px;
    left: 0;
    padding-left: 1170px;
    color: khaki
@@ -212,12 +212,53 @@ footer {
   h3 {
     font-size: 25px;
   }
+  h4 {
+    font-size: 15px;
+  }
+
+  header > div > :first-child {
+   padding-left: 50%;
+  }
+
+  header > div > :nth-child(2)> img {
+    left: 25%;
+  }
+  
+  #trabajos {
+   top: -600px;
+
+  }
+  #trabajos2 {
+  padding-top: 100%;
+  padding-left: 25px;
+  
+  }
+  #trabajos2 > ul > h3 {
+    opacity: 0;
+  }
 
 
 }
 
 @media screen and (max-width: 480px) {
-    
+     h1 {
+    font-size: 30px;
+   }
+    h2 {
+    font-size: 25px;
+   }
+  #trabajos {
+   top: -720px;
+}
+
+  #trabajos2 {
+   padding-top: 140%;
+   padding-left: 100px;
+ }
+
+  header > div > :last-child {
+    left: -10%;
+  }
  
 }
 

@@ -115,6 +115,7 @@ header > div >:nth-child(2)> img {
     position: relative;
     justify-self: center;
     border-radius: 50%;
+    width: 30%;
 }
  
 header > div > :last-child {
@@ -177,12 +178,6 @@ header > div > :last-child > p {
  color: khaki;
  
 }
-
-#contacto > .typography > h1 {
-    
-}
-
-
 
 /* MEDIA QUERIS */
 

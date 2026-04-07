@@ -60,7 +60,7 @@ nav > a:hover {
 }
 
 nav > :first-child {
-    width: 100px;
+    width: 10%;
 }
 
 nav> ul {
@@ -104,80 +104,62 @@ header {
 header > div > :first-child {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    padding: -5%;
     gap: 20px;
  }
 
 
 header > div >:nth-child(2)> img {
     display: flex;
-    position: relative;
     justify-self: center;
     border-radius: 50%;
-    width: 30%;
+    width: 20%;
 }
  
 header > div > :last-child {
     display: flex;
     flex-direction: column;
-    position: relative;
-    top: 20px;
+    text-align: center;
+    margin: 30px;
 }
 
 header > div > :last-child > p {
     word-wrap: break-word;
+    margin: 30px;
+    
 }
-
-/* SECCIÓN TRABAJOS */
-
-#trabajos { 
-   display: flex;
-   flex-direction: column;
-   margin: 23px;
-   color: khaki
-}
-
-
-#trabajos2 { 
-   display: flex;
-   flex-direction: column;
-   color: khaki
-}
-
 
 /* SECCIÓN GALERÍA */
 
 #galería {
     display: flex;
-    list-style-type: none;
-    justify-content: space-around;
-    align-items: center;
-    color: khaki
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    color: khaki;
+    width:100%;
+    height:auto
     
 }
 
 #galería > ul {
     display: flex;
-   
+    list-style-type: none;
+    margin: 5%;
     
-     
+}
+#galería > ul > h4 {
+  padding: 30px;
+  row-gap: 28px;
+
 }
 
-/* SECCIÓN CONTACTO */
-
-#contacto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: khaki
+#galería > ul > h3 {
+ margin: 20px;
 }
 
-#contacto > .typography > a {
- color: khaki;
- 
-}
 
 /* MEDIA QUERIS */
 
@@ -198,23 +180,9 @@ header > div > :last-child > p {
     font-size: 15px;
   }
 
-  header > div > :first-child {
-   
+  p {
+    font-size: 15px;
   }
-
-  header > div > :nth-child(2)> img {
-    left: 25%;
-  }
-  
-  #trabajos {
-   
-  }
-
-  
-  
-  
-
-
 }
 
 @media screen and (max-width: 480px) {
@@ -225,13 +193,14 @@ header > div > :last-child > p {
     font-size: 25px;
    }
    
-  #trabajos {
-   
-}
-
-  header > div > :last-child {
-    left: -10%;
+  #galería {
+    display: flex;
+    flex-direction: column;
   }
+  
+  #galeria > ul > img {
+  width: 50%;
+}
  
 }
 

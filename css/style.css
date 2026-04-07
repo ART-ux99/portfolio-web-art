@@ -182,6 +182,18 @@ header > div > :last-child > p {
      
 }
 
+/* SECCIÓN CONTACTO */
+
+#contacto {
+  display: flex;
+  margin: 10;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: khaki
+}
+
+
 
 /* FOOTER */
 

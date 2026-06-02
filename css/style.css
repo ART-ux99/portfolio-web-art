@@ -9,6 +9,31 @@
 }
 body {
     background-color: fuchsia;
+    width: 1000px;
+    height: 2000px;
+}
+.header {
+ display: flex;
+ align-items: center;
+ width: 800px;
+ height: 300px;
+}
+.logoAinhoa {
+   position: right top; 
+   width: 20px;
+   height: 20px;
+}
+.contenedor-principal {
+ align-items: right;
+ max-width: 1614px;
+ margin: 20 20;
+ padding: 20px;
+}
+.btn {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 15px;
 }
 .ventana-izquierda {
     width: 200px;
@@ -25,7 +50,7 @@ body {
 }
 
 
-h1{ 
+/* h1{ 
     font-size: 50px;
     font-weight: bold;
     color: rgb(244, 227, 131);
@@ -51,7 +76,7 @@ p {
 
 
 /* NAV */
-nav {
+/* nav {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -97,7 +122,7 @@ nav > a {
 
 /* HEADER */
 
-header {
+/* header {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -105,7 +130,7 @@ header {
     align-content: center;
     height: fit-content;
     color: khaki
-}
+} 
 
 header > div > :first-child {
     display: flex;
@@ -135,11 +160,11 @@ header > div > :last-child > p {
     word-wrap: break-word;
     margin: 30px;
     
-}
+} */
 
 /* SECCIÓN GALERÍA */
 
-#galería {
+/* #galería {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -164,12 +189,12 @@ header > div > :last-child > p {
 
 #galería > ul > h3 {
  margin: 20px;
-}
+} */
 
 
 /* MEDIA QUERIS */
 
-@media screen and (max-width: 720px) {
+/* @media screen and (max-width: 720px) {
     .unions {
        
     }
@@ -208,7 +233,7 @@ header > div > :last-child > p {
   width: 50%;
 }
  
-}
+} */
 
 
 
@@ -221,4 +246,4 @@ header > div > :last-child > p {
 
 
 
-
+ 

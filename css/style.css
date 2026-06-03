@@ -8,9 +8,9 @@
     font-style: normal;
 }
 body {
-    background-color: fuchsia;
-    width: 1000px;
-    height: 2000px;
+ background-color: fuchsia;
+ width: 1000px;
+ height: 2000px;
 }
 .header {
  display: flex;

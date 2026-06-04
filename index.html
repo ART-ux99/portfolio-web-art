@@ -12,12 +12,12 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
  </head>
  <body>
-      <header>
+      <header class="header-principal">
           <img src="imagenes/LGW.jpg.jpeg" alt="logo" class="logoAinhoa">
-          <div class="contenedor-principal" style="width: 700px;">
-              <button onclick="gallery.html" class="btn">Galería/Tienda</button>
-              <button onclick="contact.html" class="btn">Contacto</button>
-          </div>
+          <nav class="menu-central">
+             <a href="gallery.html">Galería</a>
+             <a href="contact.html">Contacto</a>
+          </nav>
      </header>
      <!-- <div class="ventana-izquierda">
          <section id="trabajos-principales"> 
@@ -39,36 +39,36 @@
                      <img src="imagenes/Envase.jpeg" alt="logo"> 
                      <h4>Envase Vanelope</h4>
              </div>
-         </section>
-     </div>
-     <div class="pantalla-central">
-           <section id="datos">
-              <div class="contenedor-padre">
-                 <h2>Ainhoa Reátegui Torroba</h2>
-                 <h2> Diseñadora gráfica y artista madrileña.</h2>
+         </section> -->
+     
+      </div>
+      <main class="pantalla-central">
+         <h2>Ainhoa Reátegui Torroba</h2>
+         <h2> Diseñadora gráfica y artista madrileña.</h2>
+         <div class="contenedor-padre">
                  <div class="imagen">
                      <img src="imagenes/Ainhoa.jpeg" alt="imagen personal">
                  </div>
-                 <h3>Nacida en Madrid en 2006. Crecí en una etapa en la que la tecnología se estaba empezando a desarrollar a gran velocidad por lo que mi desarrollo se concretó en dos mundos muy distintos, recordando más del moderno que del pasado puesto que era muy pequeña. Cursé el Bachillerato de Artes y conocí todo tipo de técnicas, autores y obras, interesándome sobre todo por las vanguardias y aquellas realizadas en el siglo pasado. Es por ello que todos  mis trabajos cuentan con inspiración en diseños vintage, además de estar realizados en distintas técnicas y formatos adaptables a todo tipo de eventos y ocasiones. </h3>
+                 <div class="descripcion">
+                     <p>Nacida en Madrid en 2006. Crecí en una etapa en la que la tecnología se estaba empezando a desarrollar a gran velocidad por lo que mi desarrollo se concretó en dos mundos muy distintos, recordando más del moderno que del pasado puesto que era muy pequeña. Cursé el Bachillerato de Artes y conocí todo tipo de técnicas, autores y obras, interesándome sobre todo por las vanguardias y aquellas realizadas en el siglo pasado. Es por ello que todos  mis trabajos cuentan con inspiración en diseños vintage, además de estar realizados en distintas técnicas y formatos adaptables a todo tipo de eventos y ocasiones. </p>
+                 </div>
              </div>
-           </section>
-     </div>
-     <footer>
-        <ul>
-            <li>
-                <a href="gallery.html">Galería</a>
-            </li>
-            <li>
-                <a href="contact.html">Contacto</a>
-            </li>
-            <li>
-                <a href=""> Política de cookies</a>
-            </li>
-            <li>
-                <a href=""> Política de privacidad</a>
-            </li>
-        </ul>
-     </footer> -->
-    
-    </body>
+     </main>
+     <footer class="pie-de-pagina">
+         <div class="footer-izquierda">
+             <span class="closefooter">X</span>
+             <div class="footerlinks">
+                 <a href="gallery.html">Galería</a>
+                 <a href="contact.html">Contacto</a>
+             </div>
+         </div>
+        <div class="footer-centro">
+            <h3>Ainhoa</h3>
+        </div>
+        <div class="footer-derecho">
+             <a href=""> Política de cookies</a>
+             <a href=""> Política de privacidad</a>
+        </div>
+     </footer> 
+  </body>
 </html>

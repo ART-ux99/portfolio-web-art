@@ -1,12 +1,22 @@
- 
- * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Special Elite", system-ui;
-    font-weight: 400;
-    font-style: normal;
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: "Special Elite", system-ui;
+ font-weight: 400;
+ font-style: normal;
 }
+/* HEADER */
+.header-principal {
+  background-color: fuchsia;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  width: 100%;
+  height: 70px;
+ } 
 body {
  background-color: fuchsia;
  width: 1000px;
@@ -19,9 +29,8 @@ body {
  height: 300px;
 }
 .logoAinhoa {
-   position: right top; 
-   width: 20px;
-   height: 20px;
+   width: 120px;
+   height: auto;
 }
 .contenedor-principal {
  align-items: right;
@@ -35,7 +44,10 @@ body {
  align-items: center;
  gap: 15px;
 }
-.ventana-izquierda {
+
+
+/* VENTANA IZQUIERDA */
+/* .ventana-izquierda {
     width: 200px;
     margin-left: 0;
     margin-right: auto;
@@ -47,203 +59,72 @@ body {
     width: 200px;
     height: 100px;
     border: 1px solid rgb(238, 136, 233);
-}
+} */
 
 
-/* h1{ 
-    font-size: 50px;
-    font-weight: bold;
-    color: rgb(244, 227, 131);
-}
-
-h2 {
-    font-size: 35px;
-    font-weight: bolder;
-}
-
-h3{
-   font-size: 30px;
-
-}
-
-h4 {
-    font-size: 20px;
-}
-
-p { 
-    font-size: 20px;
-}
-
-
-/* NAV */
-/* nav {
+/* PANTALLA CENTRAL */
+.pantalla-central {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    row-gap: 28px;
-    align-items: center;
-   
-
-}
-
-nav > a:hover {
-  color: #1307ed;  
-}
-
-nav > :first-child {
-    width: 10%;
-}
-
-nav> ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    gap: 24px;
-}
-
-nav > ul > li > a {
-    font-size: 18px;
-    font-weight: bold;
-    color: rgb(179, 248, 110);
-}
-
-nav > ul > li > a:hover {
- color: #1307ed;
-}
-
-nav > a {
-    top: 70px;
-    left: 0;
-    color: rgb(179, 248, 110);
-    
-}
-
-
-
-/* HEADER */
-
-/* header {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    height: fit-content;
-    color: khaki
-} 
-
-header > div > :first-child {
-    display: flex;
+    background-color: fuchsia;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: -5%;
+    padding: 30px;
+    overflow-y:auto;
+}
+.pantalla-central h2 {
+    color: rgb(235, 235, 138);;
+}
+.pantalla-central p {
+    color: rgb(235, 235, 138);
+}
+
+/* FOOTER */
+.pie-de-pagina {
+    background-color: rgb(238, 136, 233);
+    color: rgb(235, 235, 138);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    height: 70px;
+    position: relative;
+}
+.footer-izquierda {
+    display: flex;
+    align-items: center;
     gap: 20px;
- }
-
-
-header > div >:nth-child(2)> img {
-    display: flex;
-    justify-self: center;
-    border-radius: 50%;
-    width: 20%;
 }
- 
-header > div > :last-child {
+.closefooter {
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.footerlinks {
     display: flex;
     flex-direction: column;
+    gap: 4px;
+}
+.foooterlinks a{
+    background-color: greenyellow;
+    color: yellow;
+    font-size: 0.8rem;
+    padding: 2px 15px;  
     text-align: center;
-    margin: 30px;
+    font-weight: bold;
 }
-
-header > div > :last-child > p {
-    word-wrap: break-word;
-    margin: 30px;
-    
-} */
-
-/* SECCIÓN GALERÍA */
-
-/* #galería {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: space-evenly;
-    color: khaki;
-    width:100%;
-    height:auto
-    
+.footer-centro h3 {
+ font-size: 1.1rem;
+ font-weight: normal;
 }
-
-#galería > ul {
-    display: flex;
-    list-style-type: none;
-    margin: 5%;
-    
-}
-#galería > ul > h4 {
-  padding: 30px;
-  row-gap: 28px;
-
-}
-
-#galería > ul > h3 {
- margin: 20px;
-} */
-
-
-/* MEDIA QUERIS */
-
-/* @media screen and (max-width: 720px) {
-    .unions {
-       
-    }
-   h1 {
-    font-size: 35px;
-   }
-   h2 {
-    font-size: 30px;
-   }
-  h3 {
-    font-size: 25px;
-  }
-  h4 {
-    font-size: 15px;
-  }
-
-  p {
-    font-size: 15px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-     h1 {
-    font-size: 30px;
-   }
-    h2 {
-    font-size: 25px;
-   }
-   
-  #galería {
+.footer-derecha {
     display: flex;
     flex-direction: column;
-  }
-  
-  #galeria > ul > img {
-  width: 50%;
+    gap: 4px;
 }
- 
-} */
+.footer-derecha a{
+    background-color: fuchsia;
+    font-size: 0.8rem;
+    padding: 2px 15px;
+    font-weight: bold;
+}
 
-
-
-
-
-
-
-
- 
-
-
-
- 

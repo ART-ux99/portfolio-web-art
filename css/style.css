@@ -109,25 +109,16 @@ body {
 .pantalla-central p {
  color: rgb(235, 235, 138);
 }
-/* .avatar-container {
- margin-bottom: 30px;
-}
-.avatar-placeholder{
- background-color: fuchsia;
- width: 220px;
- height: 220px;
- border: 5px solid yellowgreen;
+.avatar-placeholder img {
+ width: 200px;
+ height: 200px;
  border-radius: 50%;
- justify-content: center;
- align-items: center;
- color: rgb(235, 235, 138);
- font-weight: bold;
- text-align: center; 
-} */
-
+ object-fit: cover;
+ border: 3px solid yellowgreen;
+}
 /* FOOTER */
 .pie-de-pagina {
-    background-color: rgb(238, 136, 233);
+    background-color: rgb(197, 136, 238);
     color: rgb(235, 235, 138);
     display: flex;
     justify-content: space-between;
@@ -158,10 +149,6 @@ body {
     padding: 2px 15px;  
     text-align: center;
     font-weight: bold;
-}
-.footer-centro h3 {
- font-size: 1.1rem;
- font-weight: normal;
 }
 .footer-derecha {
     display: flex;

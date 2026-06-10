@@ -13,14 +13,16 @@
  </head>
  <body>
       <header class="header-principal">
-          <img src="imagenes/LGW.jpg.jpeg" alt="logo" class="logoAinhoa">
-          <nav class="menu-central">
-             <a href="gallery.html">Galería</a>
-             <a href="contact.html">Contacto</a>
+         <div class="logo">
+             <img src="imagenes/LGW.jpg.jpeg" alt="logo" class="logoAinhoa">
+         </div>
+         <nav class="menu-central">
+             <a href="gallery.html" class="nav-item">Galería</a>
+             <a href="contact.html" class="nav-item">Contacto</a>
           </nav>
      </header>
-     <div class="ventana-izquierda">
-         <section id="trabajos-principales"> 
+     <div class="contenedor-layout">
+         <aside class="ventana-izquierda"> 
               <h2>MIS MEJORES TRABAJOS</h2>
               <div class="works-scroll">
                  <div class="work-card">
@@ -47,22 +49,22 @@
                      </div>
                      <p>Envase Vanelope</p>
              </div>
-         </section> 
+            </aside> 
+            <main class="pantalla-central">
+             <h2>Ainhoa Reátegui Torroba</h2>
+             <h2>Diseñadora gráfica y artista madrileña.</h2>
+              <div class="avatar-container">
+                 <div class="avatar-placeholder">
+                     <span>
+                         <img src="imagenes/Ainhoa.jpeg" alt="imagen personal">
+                     </span>
+                 </div>
+              </div>
+             <div class="descripcion">
+                 <p>Nacida en Madrid en 2006. Crecí en una etapa en la que la tecnología se estaba empezando a desarrollar a gran velocidad por lo que mi desarrollo se concretó en dos mundos muy distintos. Cursé el Bachillerato de Artes y conocí todo tipo de técnicas, autores y obras, interesándome sobre todo por las vanguardias y aquellas realizadas en el siglo pasado. Es por ello que todos  mis trabajos cuentan con inspiración en diseños vintage, además de estar realizados en distintas técnicas y formatos adaptables a todo tipo de eventos y ocasiones. </p>
+              </div>
+          </main>
       </div>
-      <main class="pantalla-central">
-         <h2>Ainhoa Reátegui Torroba</h2>
-         <h2>Diseñadora gráfica y artista madrileña.</h2>
-         <div class="avatar-container">
-                <div class="avatar-placeholder">
-                 <span>
-                     <img src="imagenes/Ainhoa.jpeg" alt="imagen personal">
-                 </span>
-                </div>
-         </div>
-         <div class="descripcion">
-                <p>Nacida en Madrid en 2006. Crecí en una etapa en la que la tecnología se estaba empezando a desarrollar a gran velocidad por lo que mi desarrollo se concretó en dos mundos muy distintos. Cursé el Bachillerato de Artes y conocí todo tipo de técnicas, autores y obras, interesándome sobre todo por las vanguardias y aquellas realizadas en el siglo pasado. Es por ello que todos  mis trabajos cuentan con inspiración en diseños vintage, además de estar realizados en distintas técnicas y formatos adaptables a todo tipo de eventos y ocasiones. </p>
-         </div>
-      </main>
      <footer class="pie-de-pagina">
          <div class="footer-izquierda">
              <span class="closefooter">X</span>
@@ -72,8 +74,8 @@
              </div>
          </div>
         <div class="footer-derecho">
-             <a href=""> Política de cookies</a>
-             <a href=""> Política de privacidad</a>
+             <a href="#"> Política de cookies</a>
+             <a href="#"> Política de privacidad</a>
         </div>
      </footer> 
   </body>

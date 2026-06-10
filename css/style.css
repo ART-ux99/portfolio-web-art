@@ -7,29 +7,53 @@
  font-weight: 400;
  font-style: normal;
 }
+:root {
+ --color-verde:yellowgreen;
+ --color-rosaoscuro: fuchsia;
+ --color-rosaclaro: rgb(238, 136, 233);
+ --color-amarillo: rgb(235, 235, 138);
+ --color-lila:rgb(197, 136, 238);
+}
 body {
  display: flex;
  flex-direction: column;
- background-color: fuchsia;
- color: fuchsia;
- min-height: 100vh;
- overflow-x: hidden;
+ background-color: var(--color-rosaoscuro);
+ height: 100vh;
+ overflow: hidden;
 }
 /* HEADER */
 .header-principal {
   background-color: fuchsia;
+  border-bottom: 2px solid #cf9fecf5;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 40px;
   width: 100%;
-  height: 70px;
+  height: 80px;
  } 
 .header {
  display: flex;
  align-items: center;
  width: 800px;
  height: 300px;
+}
+.menu-central {
+ display: flex;
+ gap: 40px;
+}
+.nav-item {
+ color: aquamarine;;
+ text-decoration: none;
+ font-weight: bold;
+ border-top: 4px solid rgb(235, 235, 138);
+ padding-top: 5px;
+ text-align: center;
+ min-width: 100px;
+ cursor: pointer;
+}
+.nav-item :hover{
+ color: rgb(41, 57, 16);
 }
 .logoAinhoa {
  width: 120px;
@@ -48,25 +72,31 @@ body {
  gap: 15px;
 }
 /* VENTANA IZQUIERDA */
+.contenedor-layout{
+ display: grid;
+ grid-template-columns: 300px 1fr;
+ flex: 1;
+ overflow: hidden;
+}
  .ventana-izquierda {
  display: flex;
  flex-direction: column;
  background-color:rgb(238, 136, 233) ;
- padding: 20px;
+ padding: 15px;
  border-right: 2px solid #ccc;
+ overflow: hidden;
 }
 .ventana-izquierda h2{
  background-color: rgb(238, 136, 233) ;
  color: rgb(235, 235, 138);
- font-size: 1.5rem;
- padding: 10px;
+ font-size: 1.3rem;
+ padding: 15px;
  text-align: center;
- margin-bottom: 20px;
 }
 .works-scroll{
  overflow-y: auto;
  flex: 1;
- padding-right: 5px;
+ padding-right: 20px;
 }
 .works-scroll::-webkit-scrollbar{
  width: 6px;
@@ -76,23 +106,28 @@ body {
  border-radius: 4px;
 }
 .work-card{
- margin-bottom: 25px;
+ margin-bottom: 30px;
+ text-align: center;
 }
-/* .work-thumb{
+.work-thumb{
  display: flex;
  background-color: rgb(238, 136, 233);
  color: yellowgreen;
- height: 140px;
+ height: 10px;
  justify-content: center;
  align-items: center;
  font-weight: bold;
- margin-bottom: 5px;
-} */
+ margin-bottom: 8px;
+} 
+.work-thumb img {
+ 
+}
 .work-card p {
  font-weight: bold;
  color: rgb(235, 235, 138);
- font-size: 1.0rem;
+ font-size: 1rem;
 }
+
 
 /* PANTALLA CENTRAL */
 .pantalla-central {

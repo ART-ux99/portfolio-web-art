@@ -52,8 +52,8 @@ body {
  min-width: 100px;
  cursor: pointer;
 }
-.nav-item :hover{
- color: rgb(41, 57, 16);
+.nav-item:hover { 
+ color: rgb(19, 37, 231);
 }
 .logoAinhoa {
  width: 120px;
@@ -111,6 +111,7 @@ body {
 }
 .work-thumb{
  display: flex;
+ flex-direction: column;
  background-color: rgb(238, 136, 233);
  color: yellowgreen;
  height: 10px;
@@ -120,6 +121,7 @@ body {
  margin-bottom: 8px;
 } 
 .work-thumb img {
+ width: 100%;
  
 }
 .work-card p {
@@ -127,16 +129,15 @@ body {
  color: rgb(235, 235, 138);
  font-size: 1rem;
 }
-
-
 /* PANTALLA CENTRAL */
 .pantalla-central {
  display: flex;
- background-color: fuchsia;
+ background-color: rgb(221, 92, 195);
  flex-direction: column;
  align-items: center;
- padding: 30px;
+ padding: 40px;
  overflow-y:auto;
+ gap: 20px;
 }
 .pantalla-central h2 {
  color: rgb(235, 235, 138);;
@@ -145,55 +146,64 @@ body {
  color: rgb(235, 235, 138);
 }
 .avatar-placeholder img {
- width: 200px;
- height: 200px;
+ width: 250px;
+ height: 250px;
  border-radius: 50%;
  object-fit: cover;
  border: 3px solid yellowgreen;
+ box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
 }
 /* FOOTER */
 .pie-de-pagina {
-    background-color: rgb(197, 136, 238);
-    color: rgb(235, 235, 138);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    height: 70px;
-    position: relative;
+ background-color: rgb(197, 136, 238);
+ color: rgb(235, 235, 138);
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 10px 40px;
+ height: 75px;
+ width: 100%;
 }
 .footer-izquierda {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+ display: flex;
+ align-items: center;
+ gap: 25px;
 }
 .closefooter {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   cursor: pointer;
+  color: yellow;
+}
+.closefooter:hover{
+ color: white;
 }
 .footerlinks {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
+ display: flex;
+ flex-direction: column;
+ gap: 5px;
 }
-.foooterlinks a{
-    background-color: greenyellow;
-    color: yellow;
-    font-size: 0.8rem;
-    padding: 2px 15px;  
-    text-align: center;
-    font-weight: bold;
+.footerlinks a {
+ background-color: rgb(220, 47, 255);
+ color: yellow;
+ font-size: 0.8rem;
+ padding: 2px 15px;  
+ text-align: center;
+ font-weight: bold;
+ text-decoration: none;
 }
-.footer-derecha {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
+.footer-derecho {
+ display: flex;
+ flex-direction: column;
+ gap: 5px;
 }
-.footer-derecha a{
-    background-color: fuchsia;
-    font-size: 1.0rem;
-    padding: 2px 15px;
-    font-weight: bold;
+.footer-derecho a {
+ background-color:rgb(220, 47, 255);
+ color: yellow;
+ font-size: 0.8rem;
+ padding: 2px 15px;
+ font-weight: bold;
+ text-decoration: none;
+ text-align: center;
 }
 

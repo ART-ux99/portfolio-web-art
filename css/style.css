@@ -58,6 +58,17 @@ body {
 .nav-item:hover { 
  color: rgb(19, 37, 231);
 }
+.contenedor-layout{
+ display: grid;
+ grid-template-columns: 300px 1fr;
+ flex: 1; 
+ overflow: hidden;
+}
+.zona-derecha-superior {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
 .logoAinhoa {
  width: 112px;
  height: auto;
@@ -75,17 +86,10 @@ body {
  gap: 15px;
 }
 /* VENTANA IZQUIERDA */
-.contenedor-layout{
- display: grid;
- grid-template-columns: 300px 1fr;
- flex: 1;
- overflow: hidden;
-}
- .ventana-izquierda {
+.ventana-izquierda {
  display: flex;
  flex-direction: column;
- background-color:rgb(238, 136, 233) ;
- padding: 15px;
+ background-color:rgb(238, 136, 233);
  border-right: 2px solid #ccc;
  overflow: hidden;
 }
@@ -99,14 +103,7 @@ body {
 .works-scroll{
  overflow-y: auto;
  flex: 1;
- padding-right: 20px;
-}
-.works-scroll::-webkit-scrollbar{
- width: 6px;
-}
-.works-scroll::-webkit-scrollbar-thumb{
- background: rgb(238, 136, 233) ;
- border-radius: 4px;
+ padding: 20px;
 }
 .work-card{
  margin-bottom: 30px;
@@ -114,23 +111,31 @@ body {
 }
 .work-thumb{
  display: flex;
- flex-direction: column;
  background-color: rgb(238, 136, 233);
  color: yellowgreen;
- height: 10px;
+ height: 50px;
  justify-content: center;
  align-items: center;
  font-weight: bold;
  margin-bottom: 8px;
+ border: 1px solid var(--color-lila);
 } 
 .work-thumb img {
- width: 100%;
- 
+ display: flex;
+ justify-content: center;
+ height: 70px;
 }
 .work-card p {
  font-weight: bold;
  color: rgb(235, 235, 138);
  font-size: 1rem;
+}
+.works-scroll::-webkit-scrollbar{
+ width: 8px;
+}
+.works-scroll::-webkit-scrollbar-thumb{
+ background: rgb(238, 136, 233) ;
+ border-radius: 4px;
 }
 /* PANTALLA CENTRAL */
 .pantalla-central {

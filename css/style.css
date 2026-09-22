@@ -39,15 +39,10 @@ body {
 .header-principal h2 {
  color: var(--color-amarillo) ;
  }
-.header {
- display: flex;
- align-items: center;
- width: 800px;
- height: 300px;
-}
+
 .menu-central {
  display: flex;
- gap: 40px;
+ gap: 2rem;
 }
 .nav-item {
  color: var(--color-aguamarina);
@@ -74,21 +69,10 @@ body {
   overflow: hidden;
 }
 .logoAinhoa {
- width: 112px;
+ width: 7rem;
  height: auto;
 }
-.contenedor-principal {
- align-items: right;
- max-width: 1614px;
- margin: 20 20;
- padding: 20px;
-}
-.btn {
- display: flex;
- flex-direction: column;
- align-items: center;
- gap: 15px;
-}
+
 /* VENTANA IZQUIERDA */
 .ventana-izquierda {
  display: flex;
@@ -120,14 +104,11 @@ body {
  height: auto;
  justify-content: center;
  align-items: center;
- font-weight: bold;
  margin-bottom: 8px;
  padding: 10px;
 } 
 .work-thumb img {
- height: auto;
  width: 100%;
- max-height: 100%;
  object-fit: cover;
  margin-bottom: 5px;
 }
@@ -139,10 +120,10 @@ body {
 .works-scroll::-webkit-scrollbar{
  width: 8px;
 }
-.works-scroll::-webkit-scrollbar-thumb{
+/* .works-scroll::-webkit-scrollbar-thumb{
  background: var(--color-rosaclaro) ;
  border-radius: 4px;
-}
+} */
 /* PANTALLA CENTRAL */
 .pantalla-central {
  display: flex;
@@ -151,7 +132,6 @@ body {
  align-items: center;
  padding: 40px;
  justify-content: center;
- overflow-y:auto;
  gap: 20px;
  flex: 1;
 }
@@ -167,7 +147,7 @@ body {
  box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
 }
 .descripcion {
- padding: 5px 10px;
+ padding: 1.5rem 2rem;
  color: var(--color-amarillo);
  text-align: center;
 }
@@ -193,13 +173,12 @@ body {
  align-items: center;
  gap: 25px;
 }
-.closefooter {
-  font-weight: bold;
+.close-footer {
   font-size: 1.4rem;
   cursor: pointer;
   color: var(--color-amarillo);
 }
-.closefooter:hover{
+.close-footer:hover{
  color: var(--color-aguamarina);
 }
 .footerlinks {
@@ -255,37 +234,32 @@ body {
   overflow-x: auto; 
   padding: 15px 10px; 
   background-color: var(--color-rosaclaro); 
-  border-radius: 4px; width: 100%; 
+  border-radius: 4px; 
+  width: 100%; 
 } 
-  
 .tarjeta-horizontal { 
   flex: 0 0 280px; 
   display: flex; 
-  flex-direction: 
-  column; align-items: 
-  center; gap: 10px; 
+  flex-direction: column; 
+  align-items:center; 
+  gap: 10px; 
 }
 .imagen-galeria-placeholder { 
   display: flex; 
   justify-content: center; 
-  align-items: center; 
-  font-weight: bold; 
+  align-items: center;  
   width: 100%; 
   height: 180px; 
-  background-color: 
-  var(--color-rosaclaro); color: 
-  var(--color-verde); border: 2px solid 
-  var(--color-azul);
-}  
+  border: 2px dashed var(--color-azul);
+  border-radius: 4px;
+}
 .imagen-galeria-placeholder img { 
   width: auto; 
-  height: 80%; 
-  object-fit: cover;
+  height: 90%; 
 }
 .titulo-item-galeria {
   background-color: var(--color-azul);
   color: var(--color-amarillo);
-  width: fit-content;
   padding: 2px 15px;
   font-size: 0.9rem;
 }
@@ -304,31 +278,23 @@ body {
 .video-placeholder {
   width: 100%;
   height: 200px;
-  background-color: var(--color-rosaclaro);
-  color: var(--color-verde);
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid var(--color-azul);
+  border: 2px dashed var(--color-azul);
+  border-radius: 4px;
 }
 .video-placeholder video {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.play-button {
-  position: absolute;
-  bottom: 15px;
-  right: 25px;
-  font-size: 2rem;
-  color: #333;
-  cursor: pointer;
-}
-.seccion-scroll-horizontal::-webkit-scrollbar {
+.seccion-scroll-horizontal::-webkit-scrollbar, 
+ .scroll-horizontal::-webkit-scrollbar {
   height: 8px;
 }
-.seccion-scroll-horizontal::-webkit-scrollbar-thumb {
+.seccion-scroll-horizontal::-webkit-scrollbar-thumb,
+.scroll-horizontal::-webkit-scrollbar-thumb {
   background: black;
   border-radius: 4px;
 }
